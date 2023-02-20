@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/386d6690c8.js" crossorigin="anonymous"></script>
+    <title>Portefólio</title>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Trabalhos</a></li>
+                    <li><a href="#portfolio">Portefólio</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="index_pt.html">PT</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Full-Stack Web Developer</p>
+                <h1>Olá, Sou o <span>Diogo</span><br>e sou de Portugal</h1>
+            </div>
+        </div>
+    </div>
+
+ <!-- ABOUT SESSION -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mim</h1>
+                        <p>Olá, o meu nome é Diogo Oliveira, tenho 26 anos e estou neste momento em transição de carreira profissional para me tornar um Full-stack Web Developer.
+                        Tenho uma Licenciatura em Reabilitação do Património, mas desde 2022 que tento a todo o custo tornar-me programador.
+                        Dediquei o último ano da minha vida para atingir esse objetivo de trocar para uma vida melhor bem como me sentir feliz e realizado com o que faço,
+                        porque na minha área de formação não o era. Considero-me de aprendizagem rápida e estou completamente focado e dedicado a isto.
+                        <b><br><br> Neste momento estou à procura de uma oportunidade para provar que eu consigo singrar nesta área, que tenho valor enquanto programador
+                        e que consigo que isto resulte, e mais importante que acrescento valor à empresa que me contratar.</b><br><br>
+                        Podes ver mais sobre o meu trabalho em baixo bem como o meu código no GitHub na aba dos contactos.<br>
+                        O meu curriculo também se encontra na aba dos contactos!<br>
+                        Para mais informações contactem! :D</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('education')"">Educação</p>
+                            <p class="tab-links" onclick="opentab('other-projects')">Outros projectos/cursos</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-End</span><br>HTML5, CSS3, Javascript e React.js (a aprender)</li>
+                                <li><span>Back-End</span><br>PHP e MySQL</li>
+                                <li><span>Desenvolvimento de apps</span><br>C# (a aprender), C++, Java e Lua</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Universidade</span><br>Licenciatura em Reabilitação do Património</li>
+                                <li><span>IEFP</span><br>Nível 4 - Curso Full Stack Web Development</li>
+                                <li><span>Google Certificado Profissional</span><br>UX Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="other-projects">
+                            <ul>
+                                <li><span>The Odin Project</span><br>0 to Full Stack Web Developer</li>
+                                <li><span>Udemy</span><br>React.js, C#, Angular, python</li>
+                                <li><span>Desenvolvimento para FiveM</span><br>Scripts em Lua</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  --------------------- services ----------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">O Que Consigo Fazer</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Design para a Web</h2>
+                    <p>Considero me capaz e com alguma experiência em design para a Web. Estou e continuo a aprender
+                        muito durante esta viagem e sinto-me capaz de desenhar e construir um site desde o zero. Só enviar mensagem na aba
+                        dos contactos.
+                    </p><br>
+                    <a href="#contact">Saber mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End</h2>
+                    <p>Eu digo, com vontade e orgulho, que Front-End é a minha paixão. Sou fã e adoro trabalhar em HTML, CSS e JavaScript.
+                        É onde me sinto mais confortável a trabalhar.
+                    </p><br>
+                    <a href="#contact">Saber mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Design/Desenvolvimento de Apps</h2>
+                    <p>Não estou muito confortável nesta parte, mas consigo fazê-lo. Continuo a aprender novas linguagens e a melhorar as minhas capacidades atuais 
+                        neste assunto. Mas como sempre, estou pronto para um novo desafio e sempre disposto a melhorar as minhas capacidades.
+                    </p>
+                    <a href="#contact">Saber mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ portfolio ------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Meus Trabalhos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Minesweeper em JavaScript</h3>
+                        <p>Foi um projeto do curso do IEFP como apresentação final em um dos módulos. Foi o meu primeiro trabalho em JavaScript.
+                            Podem experimentar no simbolo em baixo!</p>
+                            <a href="https://olivassssss.github.io/minesweeper/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Website de receitas</h3>
+                        <p>Este foi um projeto para o courso "The Odin Project" que estou a frequentar.
+                            Não é um site muito trabalhado mas foi dos primeiros que fiz! Consulta em baixo o site!</p>
+                            <a href="https://olivassssss.github.io/odin-recipes/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Servidor Roleplay FiveM</h3>
+                        <p>Isto é um hobby pessoal meu. Fazer scripts bem como adaptar para o Fivem. Aplicação para o GTA V para fazer roleplay na realidade do GTA V.
+                            Passa no meu GitHub!</p>
+                            <a href="https://github.com/olivassssss/4seasonsGithub" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work4.png">
+                    <div class="layer">
+                        <h3>Album Fotográfico</h3>
+                        <p>Como um dos meus hobbys é a fotografia nada melhor que como projecto final para o curso do IEFP fazer uma album fotográfico
+                            onde qualquer pessoa se podia registar e enviar as suas próprias fotos. Primeiro projeto "grande" em PHP. Visualiza em baixo!</p>
+                            <a href="https://diogodev.epizy.com/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More!</a> -->
+        </div>
+    </div>
+
+<!-- ----------------- contact ------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contacta Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> diogooliveira_96@hotmail.com</p>
+                    <p><i class="fa-solid fa-phone-flip"></i> +351 912 068 464</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/diogo-oliveira-309006189/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/olivassssss" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="attach/curriculo_Diogo_en.pdf" download class="btn btn2">Meu Currículo</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="name" name="name" placeholder="O teu nome" required>
+                        <input type="email" id="email" name="email" placeholder="oteuemail@exemplo.pt" required>
+                        <textarea name="message" id="message" rows="6" placeholder="A tua mensagem"></textarea>
+                        <button type="submit" class="btn btn3">Submeter</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Diogo Oliveira. 2023</p>
+            <img src="images/logo-footer.png" class="logo-footer">
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+        var btn3 = document.getElementById('btn3');
+
+        btn3.addEventListener('click', function(e){
+            e.preventDefault()
+            console.log('hi');
+        })
+
+        function sendEmail() {
+            const msg = document.getElementById('msg');
+            
+            Email.send({
+                SecureToken: "64233dc2-efd6-4061-9261-5adbff2b2f66",
+                To : 'diogooliveira_96@hotmail.com',
+                From : 'diogooliveira_96@hotmail.com',
+                Subject : "New Contact Form",
+                Body : "<b>Name: </b>" + document.getElementById("name").value
+                    + "<br><b> E-mail:</b> " + document.getElementById("email").value
+                    + "<br><b>Message:</b> " + document.getElementById("message").value
+            }).then(message => alert("Message sent successfully"));
+        }
+
+    </script>
+
+</body>
+</html>

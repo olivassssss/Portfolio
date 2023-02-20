@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/386d6690c8.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Work</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="index_pt.html">PT</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Full-Stack Web Developer</p>
+                <h1>Hi, I'm <span>Diogo</span><br>From Portugal</h1>
+            </div>
+        </div>
+    </div>
+
+ <!-- ABOUT SESSION -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Diogo Oliveira, I'm 26 years old and I'm switching career to be a Full-Stack Web Developer.
+                        I'm graduated at Patrimonial Rehabilitation but since 2022 I'm trying to be a programmer.
+                        I'm dedicated last year of my life to achieve that goal to switch to a
+                        better life aswell since I was not happy when I was doing Civil Engineering. 
+                        I consider myself a fast learner and I'm totally dedicated to this right know.
+                        <b><br><br>Right now I'm just looking for an opportunity to prove that I can work in this area, that I have value as 
+                        a programmer and that I can make this work and be a plus for the company that will hiring me.</b><br><br>
+                        You can see some of my work below aswell as my code in the GitHub on contact tab.<br>
+                        My CV is on the contact page aswell!<br>
+                        For more info just contact me! :D </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('other-projects')">Other Projects/courses</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-End</span><br>HTML5, CSS3, Javascript and React.js (currently learning)</li>
+                                <li><span>Back-End</span><br>PHP and MySQL</li>
+                                <li><span>App Development</span><br>C# (currently learning), C++, Java and Lua</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University</span><br>Graduation in Patrimonial Rehabilitation</li>
+                                <li><span>IEFP</span><br>Level 4 - Full Stack Web Development Course</li>
+                                <li><span>Google Professional Certificate</span><br>UX Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="other-projects">
+                            <ul>
+                                <li><span>The Odin Project</span><br>0 to Full Stack Web Developer</li>
+                                <li><span>Udemy</span><br>React.js, C#, Angular, python</li>
+                                <li><span>FiveM Development</span><br>Scripts on Lua</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  --------------------- services ----------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">What I Can Do</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I can consider that I have some experience doing web designing. I been learning
+                        alot in this last year and I think I'm capable of doing website from scratch. Just
+                        send me the idea and we discuss.
+                    </p><br>
+                    <a href="#contact">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End</h2>
+                    <p>I say, with pleasure and proud, Front-End is my passion. I'm a fan and I love to work with HTML, CSS and JavaScript.
+                        It is where I feel most confortable to work with.
+                    </p><br>
+                    <a href="#contact">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App Design and develop</h2>
+                    <p>Even this is not what I'm most confortable with I'm learning more programming languages to be able to improve
+                        on this matter. Anyways I'm always ready to be challenged and to improve my skills so I never say no to a challenge.
+                    </p>
+                    <a href="#contact">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ portfolio ------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Minesweeper in JS</h3>
+                        <p>This was a project of IEFP course as a final presentation of one of the lessons. Was my first project in JavaScript.
+                            You can try it out in the logo below!</p>
+                            <a href="https://olivassssss.github.io/minesweeper/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Recipe website</h3>
+                        <p>This was an academic project for The Odin Project curriculum that I'm doing. Not the greatest but was the first one I did! Check it out below</p>
+                            <a href="https://olivassssss.github.io/odin-recipes/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>FiveM Roleplay Server</h3>
+                        <p>This is a hobby of mine. Doing scripts in Lua for Fivem. Application for GTA V to do roleplay in GTA V reality. Give it a check in my GitHub!</p>
+                            <a href="https://github.com/olivassssss/4seasonsGithub" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.png">
+                    <div class="layer">
+                        <h3>Photography album</h3>
+                        <p>Photography is another hobby that I have so, as a final project for IEFP course I did a simple Photography album that 
+                            anyone could register and send their own photos. Was my first big project in PHP.
+                            You can see it out in the logo below!</p>
+                            <a href="https://diogodev.epizy.com/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More!</a> -->
+        </div>
+    </div>
+
+<!-- ----------------- contact ------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> diogooliveira_96@hotmail.com</p>
+                    <p><i class="fa-solid fa-phone-flip"></i> +351 912 068 464</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/diogo-oliveira-309006189/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/olivassssss" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="attach/curriculo_Diogo_en.pdf" download class="btn btn2">Check my CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="youremail@exemple.com" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Diogo Oliveira. 2023</p>
+            <img src="images/logo-footer.png" class="logo-footer">
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+        var btn3 = document.getElementById('btn3');
+
+        btn3.addEventListener('click', function(e){
+            e.preventDefault()
+            console.log('hi');
+        })
+
+        function sendEmail() {
+            const msg = document.getElementById('msg');
+            
+            Email.send({
+                SecureToken: "64233dc2-efd6-4061-9261-5adbff2b2f66",
+                To : 'diogooliveira_96@hotmail.com',
+                From : 'diogooliveira_96@hotmail.com',
+                Subject : "New Contact Form",
+                Body : "<b>Name: </b>" + document.getElementById("name").value
+                    + "<br><b> E-mail:</b> " + document.getElementById("email").value
+                    + "<br><b>Message:</b> " + document.getElementById("message").value
+            }).then(message => alert("Message sent successfully"));
+        }
+
+    </script>
+
+</body>
+</html>
