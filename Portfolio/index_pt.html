@@ -16,20 +16,31 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Trabalhos</a></li>
-                    <li><a href="#portfolio">Portefólio</a></li>
-                    <li><a href="#contact">Contactos</a></li>
-                    <li><a href="index.html">EN</a></li>
-                    <li><a href="index_pt.html">PT</a></li>
+                    <li><a href="#about" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Sobre<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="#services" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Trabalhos<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="#portfolio" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Portfolio<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="#contact" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Contactos<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="index.html" onclick="closemenu()">EN</a></li>
+                    <li><a href="index_pt.html" onclick="closemenu()">PT</a></li>
                     <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>Junior Full-Stack Web Developer</p>
-                <h1>Olá, Sou o <span>Diogo</span><br>e sou de Portugal</h1>
+        </div>
+    </div>
+            
+    <div id="icons">
+        <div class="header-text">
+            <p>Junior Front-End Web Developer</p>
+            <h1>Olá, Sou o <span>Diogo</span><br>e sou Português</h1>
+            <div class="icons-font">
+                <a><i class="fa-brands fa-html5"></i></a>
+                <a><i class="fa-brands fa-css3-alt"></i></a>
+                <a><i class="fa-brands fa-square-js" alt="ES6 ES7"></i></a>
+                <a><i class="fa-brands fa-php" alt="PHP"></i></a>
+                <a><i class="fa-brands fa-bootstrap" alt="BootStrap"></i></a>
+                <a><i class="fa-brands fa-react" alt="React"></i></a>
+                <a><i class="fa-solid fa-database" alt="MySQL/MongoDB/Express"></i></a>
             </div>
         </div>
     </div>
@@ -52,6 +63,7 @@
                         e que consigo que isto resulte, e mais importante que acrescento valor à empresa que me contratar.</b><br><br>
                         Podes ver mais sobre o meu trabalho em baixo bem como o meu código no GitHub na aba dos contactos.<br>
                         O meu curriculo também se encontra na aba dos contactos!<br>
+                        Este website é constantemente atualizado com novos projetos que desenvolvo<br>
                         Para mais informações contactem! :D</p>
 
                         <div class="tab-titles">
@@ -73,6 +85,7 @@
                                 <li><span>Universidade</span><br>Licenciatura em Reabilitação do Património</li>
                                 <li><span>IEFP</span><br>Nível 4 - Curso Full Stack Web Development</li>
                                 <li><span>Google Certificado Profissional</span><br>UX Design</li>
+                                <li><span>Udemy</span><br>React.Js, Next.Js, Strapi, e muitas outras frameworks que estou a estudar</li>
                             </ul>
                         </div>
 
@@ -158,7 +171,8 @@
                             <a href="https://github.com/olivassssss/4seasonsGithub" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-
+            </div>
+            <div class="work-list">
                 <div class="work">
                     <img src="images/work4.png">
                     <div class="layer">
@@ -166,6 +180,17 @@
                         <p>Como um dos meus hobbys é a fotografia nada melhor que como projecto final para o curso do IEFP fazer uma album fotográfico
                             onde qualquer pessoa se podia registar e enviar as suas próprias fotos. Primeiro projeto "grande" em PHP. Visualiza em baixo!</p>
                             <a href="https://diogodev.epizy.com/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work5.png">
+                    <div class="layer">
+                        <h3>Calculadora de IMC</h3>
+                        <p>Isto é um dos trabalhos que tenho desenvolvido em Javascript enquanto continuo a fazer novos cursos da Udemy. Um código simples, mas que 
+                            é necessário para nos mantermos cientes que a nossa saúde é importante!
+                        </p>
+                            <a href="https://olivassssss.github.io/IMC-Calculator/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -186,7 +211,7 @@
                         <a href="https://www.linkedin.com/in/diogo-oliveira-309006189/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/olivassssss" target="_blank"><i class="fa-brands fa-github"></i></i></a>
                     </div>
-                    <a href="attach/curriculo_Diogo_en.pdf" download class="btn btn2">Meu Currículo</a>
+                    <a href="attach/curriculo_Diogo_pt.pdf" download class="btn btn2">Meu Currículo</a>
                 </div>
                 <div class="contact-right">
                     <form onsubmit="sendEmail(); reset(); return false;">
@@ -199,6 +224,7 @@
                 </div>
             </div>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
         <div class="copyright">
             <p>Copyright © Diogo Oliveira. 2023</p>
             <img src="images/logo-footer.png" class="logo-footer">
@@ -259,9 +285,31 @@
                 Body : "<b>Name: </b>" + document.getElementById("name").value
                     + "<br><b> E-mail:</b> " + document.getElementById("email").value
                     + "<br><b>Message:</b> " + document.getElementById("message").value
-            }).then(message => alert("Message sent successfully"));
+            }).then(message => alert("Mensagem enviada com sucesso!"));
         }
 
+    </script>
+
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 
 </body>

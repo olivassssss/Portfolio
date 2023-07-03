@@ -16,20 +16,33 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Work</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="index.html">EN</a></li>
-                    <li><a href="index_pt.html">PT</a></li>
+                    <li><a href="#about" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>About<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="#services" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Work<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="#portfolio" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Portfolio<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="#contact" onclick="closemenu()"><span style="color: rgb(0, 0, 255);"> < </span>Contact<span style="color: rgb(0, 0, 255);"> > </span></a></li>
+                    <li><a href="index.html" onclick="closemenu()">EN</a></li>
+                    <li><a href="index_pt.html" onclick="closemenu()">PT</a></li>
                     <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>Junior Full-Stack Web Developer</p>
-                <h1>Hi, I'm <span>Diogo</span><br>From Portugal</h1>
+        </div>
+    </div>
+            
+    
+
+    <div id="icons">
+        <div class="header-text">
+            <p>Junior Front-End Web Developer</p>
+            <h1>Hi, I'm <span>Diogo</span><br>From Portugal</h1>
+            <div class="icons-font">
+                <a><i class="fa-brands fa-html5"></i></a>
+                <a><i class="fa-brands fa-css3-alt"></i></a>
+                <a><i class="fa-brands fa-square-js" alt="ES6 ES7"></i></a>
+                <a><i class="fa-brands fa-php" alt="PHP"></i></a>
+                <a><i class="fa-brands fa-bootstrap" alt="BootStrap"></i></a>
+                <a><i class="fa-brands fa-react" alt="React"></i></a>
+                <a><i class="fa-solid fa-database" alt="MySQL/MongoDB/Express"></i></a>
             </div>
         </div>
     </div>
@@ -44,15 +57,16 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hello, my name is Diogo Oliveira, I'm 26 years old and I'm switching career to be a Full-Stack Web Developer.
+                    <p>Hello, my name is Diogo Oliveira, I'm 27 years old and I'm switching career to be a Front-End Developer.
                         I'm graduated at Patrimonial Rehabilitation but since 2022 I'm trying to be a programmer.
-                        I'm dedicated last year of my life to achieve that goal to switch to a
-                        better life aswell since I was not happy when I was doing Civil Engineering. 
+                        I have dedicated last year of my life to achieve that goal to switch to a
+                        better life aswell as I was not happy when I was doing Civil Engineering. 
                         I consider myself a fast learner and I'm totally dedicated to this right know.
                         <b><br><br>Right now I'm just looking for an opportunity to prove that I can work in this area, that I have value as 
                         a programmer and that I can make this work and be a plus for the company that will hiring me.</b><br><br>
                         You can see some of my work below aswell as my code in the GitHub on contact tab.<br>
                         My CV is on the contact page aswell!<br>
+                        I'm always working on new projects aswell as learning new frameworks, so this is updated alot of times<br>
                         For more info just contact me! :D </p>
 
                         <div class="tab-titles">
@@ -74,6 +88,7 @@
                                 <li><span>University</span><br>Graduation in Patrimonial Rehabilitation</li>
                                 <li><span>IEFP</span><br>Level 4 - Full Stack Web Development Course</li>
                                 <li><span>Google Professional Certificate</span><br>UX Design</li>
+                                <li><span>Udemy</span><br>React.Js, Next.Js, Strapi, and alot more frameworks (learning atm)</li>
                             </ul>
                         </div>
 
@@ -157,6 +172,8 @@
                             <a href="https://github.com/olivassssss/4seasonsGithub" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
+            </div>
+            <div class="work-list">
                 <div class="work">
                     <img src="images/work4.png">
                     <div class="layer">
@@ -165,6 +182,17 @@
                             anyone could register and send their own photos. Was my first big project in PHP.
                             You can see it out in the logo below!</p>
                             <a href="https://diogodev.epizy.com/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work5.png">
+                    <div class="layer">
+                        <h3>IMC calculator</h3>
+                        <p>This is one of the jobs I've been doing in Javascript as I continue to take new Udemy courses. A simple code, but that
+                            it is necessary to keep us aware that our health is important!
+                        </p>
+                            <a href="https://olivassssss.github.io/IMC-Calculator/" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -191,7 +219,7 @@
                     <form onsubmit="sendEmail(); reset(); return false;">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                         <input type="email" id="email" name="email" placeholder="youremail@exemple.com" required>
-                        <textarea name="message" id="message" rows="6" placeholder="Your message"></textarea>
+                        <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
                         <button type="submit" class="btn btn3">Submit</button>
                     </form>
                     <span id="msg"> </span>
@@ -202,6 +230,7 @@
             <p>Copyright © Diogo Oliveira. 2023</p>
             <img src="images/logo-footer.png" class="logo-footer">
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
     </div>
 
     <script>
@@ -237,7 +266,7 @@
     </script>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+ 
     <script>
 
         var btn3 = document.getElementById('btn3');
@@ -263,5 +292,26 @@
 
     </script>
 
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 </html>
